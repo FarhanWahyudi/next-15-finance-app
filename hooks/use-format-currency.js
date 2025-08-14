@@ -6,7 +6,6 @@ export const useFormatCurrency = (amount) => {
     }
 
     return useMemo(() => {
-        formatCurrency(amount),
-        [amount]
-    })
+        return formatCurrency(amount);
+    }, [amount])
 }
